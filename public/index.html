@@ -7,13 +7,17 @@
        <!-- Bootstrap CSS -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <header class="w3-container w3-teal">
       <h1>Welcome to Convargo</h1>
       <h5>For a quick and free quote please use our super calculator below ! </h5>
+      </header>
+      <div class="w3-container">
     <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
@@ -27,6 +31,8 @@
     </div>
     <button  id="compute" class="btn btn-success">Compute</button>
     <div id="actors"></div>
+
+    </div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
   </body>
