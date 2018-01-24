@@ -14,27 +14,46 @@
   </head>
   <body>
     <header class="w3-container w3-teal">
+      <div id="logo">
+    <img src="logo.png" class="logo"/>
+
+    </div>
       <h1>Welcome to Convargo</h1>
       <h5>For a quick and free quote please use our super calculator below ! </h5>
-      </header>
-      <div class="w3-container">
-        <div id="trucker">
-          <input class="name" type="text" placeholder="Trucker name"/>
-          <input class="price-by-km" type="number" placeholder="Price by km"/>
-          <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+    </header>
+<br>
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-sm-2" id="trucker">
+          <p>Truckers: </p>
+          <input class="name" type="text" placeholder="Trucker name"/> <br> <br>
+          <input class="price-by-km" type="number" placeholder="Price by km"/> <br> <br>
+          <input class="price-by-cubic" type="number" placeholder="Price by m3"/> <br><br>
         </div>
-        <div id="shipper">
-          <input class="name" type="text" placeholder="Shipper name"/>
-          <input class="distance" type="number" placeholder="Distance in km"/>
-          <input class="volume" type="number" placeholder="Volume in m3"/>
-          <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
 
-    <button  id="compute" class="btn btn-success">Compute</button>
+        <div class="col-sm-2" id="shipper" >
+          <p>Shippers: </p>
+          <input class="name" type="text" placeholder="Shipper name"/><br><br>
+          <input class="distance" type="number" placeholder="Distance in km"/><br><br>
+          <input class="volume" type="number" placeholder="Volume in m3"/><br>
+
+          <span>Deductible option</span>
+          <input class="option" type="checkbox" placeholder="Deductible option" title="Deductible option"/>
+        </div>
+
       </div>
-    <div class="w3-container w3-red">
-    <div id="actors"></div>
-    </div>
+
+      <button  id="compute" class="btn btn-success">Compute</button> <br> <br>
+
+
+
+        <div id="actors"/>
+
+        </div>
+
+
+
+
     <script src="convargo.js"></script>
     <script src="index.js"></script>
   </body>

@@ -1,8 +1,7 @@
 
 
 body {
-    background-color: #f4f8fb;
-  /* background-image:url(Convargo.jpg);*/
+
     font-size: 15px;
     color: #565656;
     width: 100%;
@@ -11,37 +10,23 @@ body {
     margin-right: 0;
     font-family: 'open_sansregular', sans-serif;
     font-weight: 300;
-}
 
-
-/*==========================================
-PRE LOADER
-==========================================*/
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fefefe;
-    z-index: 99999;
-    height: 100%;
-    width: 100%;
-    overflow: hidden !important;
-}
-.loaded {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-image: url(../images/loading.gif);
+    background: white fixed center;
     background-repeat: no-repeat;
-    background-position: center;
-    -moz-background-size: cover;
-    background-size: cover;
-    margin: -20px 0 0 -20px;
+    background-size: 1900px 1200px;
 }
+
+#logo {
+    position: relative;
+}
+#logo img {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    height: 40px;
+    width: 300px;
+}
+
 
 img {
     -moz-user-select: none;
