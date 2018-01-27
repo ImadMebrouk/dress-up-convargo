@@ -1,52 +1,159 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <title>CSS/HTML Workshop with Convargo</title>
-    <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <!-- Bootstrap CSS -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header class="w3-container w3-teal">
-      <div  class="container"id="logo">
-    <img src="logo.png" class="logo"/>
-      </div>
-      <h1>Welcome to Convargo</h1>
-      <h5>For a quick and free quote please use our super calculator below ! </h5>
-    </header>
-<br>
-      <div class="container-fluid">
-       <div class="row">
-        <div class="col-sm-2" id="trucker">
-          <p>Truckers: </p>
-          <input class="name" type="text" placeholder="Trucker name"/> <br> <br>
-          <input class="price-by-km" type="number" placeholder="Price by km"/> <br> <br>
-          <input class="price-by-cubic" type="number" placeholder="Price by m3"/> <br><br>
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tork html template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/slicknav.min.css">
+        <link rel="stylesheet" href="assets/css/fonticons.css">
+        <link rel="stylesheet" href="assets/fontcss/style.css">
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#navmenu">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+
+        <!--Home page style-->
+
+
+        <header class="header navbar-fixed-top">
+            <div class="navbar navbar-default main-menu">
+
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <a  href="" class="navbar-brand"><img src="assets/images/logo.png" alt="Logo" /></a>
+
+                    </div>
+                    <div class="collapse navbar-collapse">
+
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="main-navigation">
+
+                                <ul id="menu" class="nav navbar-nav">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#portfolio">Calculator</a></li>
+                                </ul>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </header><!-- end of navbar -->
+
+        <section id="home" class="home">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 col-sm-offset-5">
+                            <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                <h1>Welcome to Convargo</h1>
+                                <p>For a quick and free quote please use our super calculator below !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="portfolio">
+          <div class="container">
+            <div class="container">
+             <div class="row">
+              <div class="col-sm-2" id="trucker">
+                 <br>
+                <p>Truckers: </p>
+                <input class="name" type="text" placeholder="Trucker name"/> <br> <br>
+                <input class="price-by-km" type="number" placeholder="Price by km"/> <br> <br>
+                <input class="price-by-cubic" type="number" placeholder="Price by m3"/> <br><br>
+              </div>
+
+              <div class="col-sm-2" id="shipper" >
+                 <br>
+                <p>Shippers: </p>
+                <input class="name" type="text" placeholder="Shipper name"/><br><br>
+                <input class="distance" type="number" placeholder="Distance in km"/><br><br>
+                <input class="volume" type="number" placeholder="Volume in m3"/><br>
+
+                <span>Deductible option</span>
+                <input class="option" type="checkbox" placeholder="Deductible option" title="Deductible option"/>
+              </div>
+
+              <div class="col-sm-2" >
+                <br>
+                 <p>Actors: </p>
+                <div class="container"  id="actors">
+
+                <div id="actors"/>
+              </div>
+              </div>
+            </div>
+
+
+
+            </div>
+  <button  id="compute" class="btn" "btn-block">Compute</button> <br> <br>
+
+          <script src="convargo.js"></script>
+          <script src="index.js"></script>
+          </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="copyright_text text-center">
+                            <p class=" wow fadeInRight" data-wow-duration="1s">Imad Mebrouk, Web Application Architecture, Convargo Workshop 2018. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- START SCROLL TO TOP  -->
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
 
-        <div class="col-sm-2" id="shipper" >
-          <p>Shippers: </p>
-          <input class="name" type="text" placeholder="Shipper name"/><br><br>
-          <input class="distance" type="number" placeholder="Distance in km"/><br><br>
-          <input class="volume" type="number" placeholder="Volume in m3"/><br>
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/isotope.min.js"></script>
 
-          <span>Deductible option</span>
-          <input class="option" type="checkbox" placeholder="Deductible option" title="Deductible option"/>
-        </div>
-      </div>
-
-      <button  id="compute" class="btn btn-success">Compute</button> <br> <br>
-        <div id="actors"/>
-        </div>
+        <script src="assets/js/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/jquery.slicknav.min.js"></script>
 
 
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-  </body>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
