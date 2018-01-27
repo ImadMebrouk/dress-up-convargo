@@ -17,11 +17,11 @@ body {
 }
 
 #logo {
-    position: relative;
+    position: fixed;
 }
 #logo img {
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 300px;
     right: 0px;
     height: 40px;
     width: 300px;
@@ -65,7 +65,7 @@ a span {
     box-sizing: border-box;
     /*    direction: rtl;*/
 }
-p {
+.p {
     margin: 0 0 15px;
 
 }
